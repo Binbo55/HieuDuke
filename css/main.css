@@ -1,0 +1,312 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+html,
+body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  opacity: 1;
+  font-family: 'Roboto', medium;
+  letter-spacing: 0px;
+}
+
+body a {
+  text-decoration: none;
+}
+
+body #contact {
+  font-family: 'Roboto', 500;
+  color: #FFFFFF;
+  background-color: #ebd834;
+}
+
+body nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 130px;
+  width: 100%;
+  background-color: #b33b2b;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-shadow: 0px 3px 10px #000000B5;
+          box-shadow: 0px 3px 10px #000000B5;
+  opacity: 1;
+  letter-spacing: 0px;
+  z-index: 1;
+}
+
+body nav .nav-list {
+  padding-left: 0;
+  margin-left: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body nav .nav-list .logo {
+  max-height: 40px;
+  max-width: 40px;
+  opacity: 1;
+}
+
+body nav .nav-list .nav-items {
+  color: #744848;
+  text-decoration: none;
+  font: normal normal normal 20px/34px Roboto;
+  list-style: none;
+  display: inline-block;
+  text-align: center;
+}
+
+body nav .nav-list a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+body nav .nav-list1 {
+  padding-left: 0;
+  margin-right: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body nav .nav-list1 .nav-items1 {
+  color: #744848;
+  text-decoration: none;
+  font: normal normal normal 20px/34px Roboto;
+  list-style: none;
+  display: inline-block;
+  text-align: center;
+  margin-right: 50px;
+}
+
+body nav .nav-list1 a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+body nav .nav-list1 button {
+  background: transparent;
+  border: none;
+}
+
+body nav .nav-list1 img {
+  width: 20px;
+  height: 20px;
+}
+
+body header {
+  margin: 50px 150px 50px 150px;
+  font-family: 'Roboto', 300;
+}
+
+body header #in {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font: normal normal 300 24px/32px Roboto;
+  letter-spacing: 0px;
+  opacity: 1;
+}
+
+body header #in .in1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 24px;
+}
+
+body header #in .in2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+body header #in .in2 select {
+  font: normal normal 300 24px/32px Roboto;
+  letter-spacing: 0px;
+  height: 30px;
+  border: 0px solid #858183;
+}
+
+body header #in .in2 option {
+  font: normal normal 300 24px/32px Roboto;
+  letter-spacing: 0px;
+}
+
+body header #select {
+  width: 30%;
+  height: 600px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  font: normal normal 300 18px/34px Roboto;
+}
+
+body header #select a {
+  color: black;
+  font: normal normal normal 18px/34px Roboto;
+}
+
+body header #select2 {
+  display: inline-block;
+  width: 280px;
+}
+
+body header #select2 #select-color {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body header #select2 .color {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+body header #header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 30px;
+}
+
+body header #header #phone {
+  max-width: 10px;
+  max-height: 10px;
+}
+
+body header #header #select {
+  width: 300px;
+  width: 300px;
+  height: 600px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+body header #header #select a {
+  color: black;
+  font: normal normal normal 18px/34px Roboto;
+}
+
+body header #header #select2 {
+  display: inline-block;
+  width: 280px;
+}
+
+body header #header #select2 #select-color {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body header #header #select2 .color {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+body header #header #grid {
+  padding-left: 30px;
+  font: normal normal 400 16px/34px Roboto;
+}
+
+body header #header #grid p {
+  text-align: center;
+  color: #0000008A;
+}
+
+body header #header #grid a {
+  color: #222121;
+}
+
+body header #header #grid .Pagination1 {
+  position: absolute;
+  right: 150px;
+}
+
+body #pa {
+  margin-top: 50px;
+  text-align: center;
+  color: #0000008A;
+  font: normal normal 400 18px/34px Roboto;
+}
+
+body .icon {
+  width: 40px;
+  height: 40px;
+}
+
+body footer {
+  padding-top: 30px;
+  padding-bottom: 20px;
+  margin-top: 50px;
+  background-color: #b33b2b;
+  font: normal normal 400 18px/34px Roboto;
+}
+
+body footer #container-footer {
+  margin-left: 150px;
+  margin-right: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: white;
+}
+
+body footer #container-footer a {
+  color: white;
+}
+
+body footer #container-footer p {
+  font: normal normal 400 20px/34px Roboto;
+}
+/*# sourceMappingURL=main.css.map */
