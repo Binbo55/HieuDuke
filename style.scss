@@ -130,9 +130,10 @@ body {
       align-items: center;
 
       h2 {
-        font-size: 25px;
+        font-size: 30px;
         padding-bottom: 30px;
         padding-top: 10px;
+        font-weight: 400;
       }
 
       div {
@@ -167,9 +168,10 @@ body {
       justify-content: center;
 
       h2 {
-        font-size: 25px;
+        font-size: 30px;
         padding-bottom: 30px;
         padding-top: 10px;
+        font-weight: 400;
       }
 
       div {
@@ -244,28 +246,33 @@ body {
 
   /*Tin tức cưới hỏi và đặt lịch*/
   #TTCH {
-    background-color: yellowgreen;
+
     display: flex;
     justify-content: center;
     margin: 30px 200px;
+
     #left {
       display: flex;
       justify-content: center;
       flex-direction: column;
+
       .title {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        
+
         h2 {
-           font-size: 25px;
-        padding-top: 10px;
-            a {
-              text-decoration: none;
-              color: black;
-            }
+          font-size: 30px;
+          padding-top: 10px;
+          font-weight: 400;
+
+          a {
+            text-decoration: none;
+            color: black;
           }
+        }
+
         .text_small {
           font-size: 16px;
           font-style: italic;
@@ -275,50 +282,327 @@ body {
 
       /*set up content of Tin Tuc*/
       .container {
-      background-color: brown;
-      
+
+
         .row {
           display: flex;
-            justify-content: center;
-            align-items: center;
+          justify-content: center;
+          align-items: center;
+
           .loop-blog {
             margin: 10px;
-    
-            
+
+
             h3 {
               font-size: 18px;
+
               a {
                 text-decoration: none;
                 color: black;
               }
             }
+
             .bl {
               display: flex;
               justify-content: center;
               flex-direction: row;
-              a{
+
+              a {
                 margin: auto 10px;
               }
-            .small-content {
-              font-size: 16px;
-              font-weight: 500;
-              color: rgb(207, 207, 207);
+
+              .small-content {
+                font-size: 16px;
+                font-weight: 500;
+                color: rgb(207, 207, 207);
+              }
             }
+          }
+        }
+      }
+    }
+
+    /*Form đặt lịch*/
+    #right {
+      min-width: 380px;
+
+      #Form-DL {
+        background-color: rgb(142, 216, 221);
+        height: 100%;
+        padding: 10px;
+
+        .container {
+          height: 100%;
+          background-color: rgb(142, 216, 221);
+          box-sizing: border-box;
+          border: 3px solid white;
+
+
+          form {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+
+            width: 200xp;
+
+            .head-DL {
+              h1 {
+                font-size: 30px;
+                padding-top: 10px;
+                font-weight: 400;
+              }
+
+              span {
+                font-size: 16px;
+                font-style: italic;
+
+              }
+
+              a {
+                text-decoration: none;
+                font-size: 16px;
+                font-style: italic;
+                color: black;
+              }
+
+            }
+
+            .input-box {
+
+              input {
+                width: 100%;
+                padding: 12px 20px;
+                margin: 4px 0;
+                box-sizing: border-box;
+                border: 1px solid white;
+                border-radius: 3px;
+              }
+
+              textarea {
+                width: 100%;
+                padding: 12px 20px;
+                margin: 4px 0;
+                box-sizing: border-box;
+                border: 1px solid white;
+                border-radius: 3px;
+              }
+            }
+
+            .btn-box {
+              width: 100%;
+              margin-top: 20px;
+
+              button {
+                width: 100%;
+                padding: 12px 20px;
+                margin: 4px 0;
+                box-sizing: border-box;
+                border: 1px;
+                border-radius: 3px;
+                background-color: rgb(240, 52, 52);
+                color: white;
+              }
+            }
+          }
+        }
+      }
+
+    }
+
+
+  }
+ /*Liên hệ tư vấn*/
+  #LHTV {
+    width: 100%;
+   
+    #TV {
+      
+      margin: auto 100px;
+      
+        h2{ 
+          
+          a {
+            display: flex;
+            justify-content: center;
+  
+            color: black;
+            text-decoration: none;
+            font-weight: 400;
+          }
+        }
+        
+        /*Nội dung tư vấn, sdt*/
+        .container {
+
+          h3 {
+            font-size: 24px;
+            color: rgb(224, 100, 100);
+            font-weight: 400;
+          }
+    
+          div {
+            text-align: center;
+            font-family: $font;
+            font-size: 18px;
+            font-weight: normal;
+            color: rgb(248, 143, 58);
+            
+            a {
+              margin: 10px auto;
+              color: rgb(248, 143, 58);
+              text-decoration: none;
+              line-height: 1.3em;
+            }
+          }
+        }
+      
+    }
+  }
+
+
+  /*Thanh công cụ*/
+  .toolbar_slide {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+     .wrap_toolbar {
+       margin-bottom: 300px;
+       .item_tool {
+         border: 1px solid black;
+         border-radius: 3px;
+         width: 44px;
+         height: 44px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         margin: 12px;
+         background-color: white;
+         a {
+          color: rgb(240, 52, 52);
+         }
+       }
+     }
+  }
+
+  /*Footer*/
+   footer {
+    
+    font: normal normal 400 18px/34px Roboto;
+     width: 100%;
+     .footer_top {
+      font-style: italic;
+      font-size: 16px;
+      letter-spacing: 1px;
+      font-weight: normal;
+      .footer-social {
+        p {
+          display: flex;
+          justify-content: center;
+          text-align: center;
+          margin: 20px 200px;
+        }
+        .social-icons {
+          
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 80px;
+          li {
+            border: 1px solid rgb(165, 165, 165);
+            border-radius: 3px;
+            width: 46px;
+            height: 46px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 10px;
+            background-color: white;
+            a {
+              list-style: none;
+              color: black;
+              
+              font-size: 20px;
+              
             }
           }
         }
       }
      }
 
-     #right {
 
-      #Form-DL {
-        
+     /*bottom*/
+    
+      .site-footer {
+        background-color: red;
+        padding-top: 30px;
+        padding-bottom: 20px;
+        margin-top: 30px;
+        .container {
+           .widget {
+             
+              h4 {
+                padding: 10px;
+                a {
+                  color: rgb(243, 154, 91);
+                }
+              }
+              ul {
+                list-style: none;
+                font: normal normal 400 14px/30px Roboto;
+                
+                li {
+                      
+                  color: white;
+                  a {
+                    color: white;
+                  }
+                }
+              }
+           }
+          
+
+        }
       }
-       
-     }
 
-   
-  }
+      /*end and call*/
+      .footer-bottom {
+        background-color: red;
+            color: white;
+            margin: auto;
+            .container {
+              min-height: 70px;
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            a {
+              color: white;
+            }
+            .phone {
+              position: fixed;
+              right: 0;
+              bottom: 0;
+              
+                i {
+                  border: 1px solid black;
+                  border-radius: 50%;
+                  width: 44px;
+                  height: 44px;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  margin: auto 60px 60px auto;
+                  
+                  background-color: rgb(255, 83, 83);
+                  
+                }
+              
+            }
+            }
+      }
 
+    
+  
+   }
 }

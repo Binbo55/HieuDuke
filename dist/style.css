@@ -16,6 +16,9 @@ body {
   /*set up picture*/
   /*Layout-I*/
   /*Tin tức cưới hỏi và đặt lịch*/
+  /*Liên hệ tư vấn*/
+  /*Thanh công cụ*/
+  /*Footer*/
 }
 body #Nav-bar {
   background-color: white;
@@ -114,9 +117,10 @@ body #Layout-I #DVCC {
   align-items: center;
 }
 body #Layout-I #DVCC h2 {
-  font-size: 25px;
+  font-size: 30px;
   padding-bottom: 30px;
   padding-top: 10px;
+  font-weight: 400;
 }
 body #Layout-I #DVCC div {
   text-align: center;
@@ -143,9 +147,10 @@ body #Layout-I #TV {
   justify-content: center;
 }
 body #Layout-I #TV h2 {
-  font-size: 25px;
+  font-size: 30px;
   padding-bottom: 30px;
   padding-top: 10px;
+  font-weight: 400;
 }
 body #Layout-I #TV div {
   text-align: left;
@@ -204,10 +209,10 @@ body #author-form .container .reviews_content {
   font-weight: normal;
 }
 body #TTCH {
-  background-color: yellowgreen;
   display: flex;
   justify-content: center;
   margin: 30px 200px;
+  /*Form đặt lịch*/
 }
 body #TTCH #left {
   display: flex;
@@ -222,8 +227,9 @@ body #TTCH #left .title {
   flex-direction: column;
 }
 body #TTCH #left .title h2 {
-  font-size: 25px;
+  font-size: 30px;
   padding-top: 10px;
+  font-weight: 400;
 }
 body #TTCH #left .title h2 a {
   text-decoration: none;
@@ -233,9 +239,6 @@ body #TTCH #left .title .text_small {
   font-size: 16px;
   font-style: italic;
   margin: 10px 40px 30px;
-}
-body #TTCH #left .container {
-  background-color: brown;
 }
 body #TTCH #left .container .row {
   display: flex;
@@ -264,4 +267,216 @@ body #TTCH #left .container .row .loop-blog .bl .small-content {
   font-size: 16px;
   font-weight: 500;
   color: #cfcfcf;
+}
+body #TTCH #right {
+  min-width: 380px;
+}
+body #TTCH #right #Form-DL {
+  background-color: #8ed8dd;
+  height: 100%;
+  padding: 10px;
+}
+body #TTCH #right #Form-DL .container {
+  height: 100%;
+  background-color: #8ed8dd;
+  box-sizing: border-box;
+  border: 3px solid white;
+}
+body #TTCH #right #Form-DL .container form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  width: 200xp;
+}
+body #TTCH #right #Form-DL .container form .head-DL h1 {
+  font-size: 30px;
+  padding-top: 10px;
+  font-weight: 400;
+}
+body #TTCH #right #Form-DL .container form .head-DL span {
+  font-size: 16px;
+  font-style: italic;
+}
+body #TTCH #right #Form-DL .container form .head-DL a {
+  text-decoration: none;
+  font-size: 16px;
+  font-style: italic;
+  color: black;
+}
+body #TTCH #right #Form-DL .container form .input-box input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 4px 0;
+  box-sizing: border-box;
+  border: 1px solid white;
+  border-radius: 3px;
+}
+body #TTCH #right #Form-DL .container form .input-box textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 4px 0;
+  box-sizing: border-box;
+  border: 1px solid white;
+  border-radius: 3px;
+}
+body #TTCH #right #Form-DL .container form .btn-box {
+  width: 100%;
+  margin-top: 20px;
+}
+body #TTCH #right #Form-DL .container form .btn-box button {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 4px 0;
+  box-sizing: border-box;
+  border: 1px;
+  border-radius: 3px;
+  background-color: #f03434;
+  color: white;
+}
+body #LHTV {
+  width: 100%;
+}
+body #LHTV #TV {
+  margin: auto 100px;
+  /*Nội dung tư vấn, sdt*/
+}
+body #LHTV #TV h2 a {
+  display: flex;
+  justify-content: center;
+  color: black;
+  text-decoration: none;
+  font-weight: 400;
+}
+body #LHTV #TV .container h3 {
+  font-size: 24px;
+  color: #e06464;
+  font-weight: 400;
+}
+body #LHTV #TV .container div {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+  color: #f88f3a;
+}
+body #LHTV #TV .container div a {
+  margin: 10px auto;
+  color: #f88f3a;
+  text-decoration: none;
+  line-height: 1.3em;
+}
+body .toolbar_slide {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+}
+body .toolbar_slide .wrap_toolbar {
+  margin-bottom: 300px;
+}
+body .toolbar_slide .wrap_toolbar .item_tool {
+  border: 1px solid black;
+  border-radius: 3px;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 12px;
+  background-color: white;
+}
+body .toolbar_slide .wrap_toolbar .item_tool a {
+  color: #f03434;
+}
+body footer {
+  font: normal normal 400 18px/34px Roboto;
+  width: 100%;
+  /*bottom*/
+  /*end and call*/
+}
+body footer .footer_top {
+  font-style: italic;
+  font-size: 16px;
+  letter-spacing: 1px;
+  font-weight: normal;
+}
+body footer .footer_top .footer-social p {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 20px 200px;
+}
+body footer .footer_top .footer-social .social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+}
+body footer .footer_top .footer-social .social-icons li {
+  border: 1px solid #a5a5a5;
+  border-radius: 3px;
+  width: 46px;
+  height: 46px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  background-color: white;
+}
+body footer .footer_top .footer-social .social-icons li a {
+  list-style: none;
+  color: black;
+  font-size: 20px;
+}
+body footer .site-footer {
+  background-color: red;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  margin-top: 30px;
+}
+body footer .site-footer .container .widget h4 {
+  padding: 10px;
+}
+body footer .site-footer .container .widget h4 a {
+  color: #f39a5b;
+}
+body footer .site-footer .container .widget ul {
+  list-style: none;
+  font: normal normal 400 14px/30px Roboto;
+}
+body footer .site-footer .container .widget ul li {
+  color: white;
+}
+body footer .site-footer .container .widget ul li a {
+  color: white;
+}
+body footer .footer-bottom {
+  background-color: red;
+  color: white;
+  margin: auto;
+}
+body footer .footer-bottom .container {
+  min-height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body footer .footer-bottom .container a {
+  color: white;
+}
+body footer .footer-bottom .container .phone {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+}
+body footer .footer-bottom .container .phone i {
+  border: 1px solid black;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto 60px 60px auto;
+  background-color: #ff5353;
 }
