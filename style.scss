@@ -1,30 +1,27 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 $font: "Roboto",
 sans-serif;
-$shadow: 0px 3px 6px #00000080;
+
+$colors:(primary:#FFFFFF,
+  redf:#e53e48,
+  text1:#4b4b4b8a,
+  top-page:#f5bd46);
 
 @function color($color-name) {
   @return map-get($colors, $color-name);
 }
 
-html,
+
+
 body {
+  width: 100%;
   margin: 0;
   padding: 0;
   font-size: 14px;
-  font-family: $font;
-}
-
-body {
-  background-color: #ccc;
-  width: 100%;
-  font-family: $font;
-
   #Nav-bar {
-    background-color: rgb(255, 255, 255);
+
     min-height: 540px;
-    color: white;
-    font-size: 16px;
+    color: color(primary);
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -34,7 +31,8 @@ body {
       min-height: 28px;
       width: 100%;
       list-style: none;
-      background-color: rgb(247, 222, 3);
+      
+      background-color: color(top-page);
       display: flex;
       justify-content: left;
       align-items: center;
@@ -43,7 +41,7 @@ body {
       padding-left: 250px;
 
       .loca-items {
-        color: white;
+        color: color(primary);
         margin: auto 10px;
 
         i {
@@ -52,7 +50,7 @@ body {
 
         a {
           text-decoration: none;
-          color: white;
+          color: color(primary);
           margin: auto 5px;
         }
       }
@@ -69,7 +67,7 @@ body {
     align-items: center;
     text-align: center;
     flex-wrap: wrap;
-    background-color: rgb(238, 45, 45);
+    background-color: color(redf);
 
     /*items in list*/
     .list-it {
@@ -120,7 +118,7 @@ body {
     justify-content: center;
     flex-direction: column;
     position: relative;
-    background-color: rgb(255, 255, 255);
+    
 
     /*dịch vụ cung cấp*/
     #DVCC {
@@ -144,18 +142,22 @@ body {
 
         p {
           margin: 10px;
-          color: rgb(231, 33, 33);
+          color: color(redf);
         }
       }
     }
 
     /*gioi thieu */
     #GT {
-      background-color: rgb(255, 255, 255);
-      margin: auto 300px;
-
-      .GT-p {
-        color: black;
+      
+      margin: 20px 300px;
+       h2 {
+        font-size: 30px;
+        padding-bottom: 30px;
+        padding-top: 10px;
+        font-weight: 400;
+       }
+      .GT-p {color: color(text1);
         font-weight: normal;
         font-size: 16px;
       }
@@ -179,10 +181,10 @@ body {
         font-family: $font;
         font-size: 18px;
         font-weight: normal;
-
+        
         a {
-          margin: 10px 5px;
-          color: rgb(0, 0, 0);
+          
+          color: color(text1);
           text-decoration: none;
           line-height: 1.3em;
         }
@@ -200,8 +202,6 @@ body {
     background-image: url(image/anh-bia-dep-15-696x464.jpg);
 
     .container {
-      display: flex;
-      justify-content: center;
       color: white;
       margin: 30px auto;
 
@@ -264,8 +264,9 @@ body {
 
         h2 {
           font-size: 30px;
-          padding-top: 10px;
-          font-weight: 400;
+        padding-bottom: 30px;
+        padding-top: 10px;
+        font-weight: 400;
 
           a {
             text-decoration: none;
@@ -276,7 +277,8 @@ body {
         .text_small {
           font-size: 16px;
           font-style: italic;
-          margin: 10px 40px 30px;
+          color: color(text1);
+          margin: auto 40px 30px;
         }
       }
 
@@ -400,7 +402,7 @@ body {
                 box-sizing: border-box;
                 border: 1px;
                 border-radius: 3px;
-                background-color: rgb(240, 52, 52);
+                background-color: color(redf);
                 color: white;
               }
             }
@@ -412,51 +414,52 @@ body {
 
 
   }
- /*Liên hệ tư vấn*/
+
+  /*Liên hệ tư vấn*/
   #LHTV {
     width: 100%;
-   
-    #TV {
-      
-      margin: auto 100px;
-      
-        h2{ 
-          
-          a {
-            display: flex;
-            justify-content: center;
-  
-            color: black;
-            text-decoration: none;
-            font-weight: 400;
-          }
-        }
-        
-        /*Nội dung tư vấn, sdt*/
-        .container {
 
-          h3 {
-            font-size: 24px;
-            color: rgb(224, 100, 100);
-            font-weight: 400;
-          }
-    
-          div {
-            text-align: center;
-            font-family: $font;
-            font-size: 18px;
-            font-weight: normal;
+    #TV {
+
+      margin: auto 100px;
+
+      h2 {
+
+        a {
+          display: flex;
+          justify-content: center;
+
+          color: black;
+          text-decoration: none;
+          font-weight: 400;
+        }
+      }
+
+      /*Nội dung tư vấn, sdt*/
+      .container {
+
+        h3 {
+          font-size: 24px;
+          color: rgb(224, 100, 100);
+          font-weight: 400;
+        }
+
+        div {
+          text-align: center;
+          font-family: $font;
+          font-size: 18px;
+          font-weight: normal;
+          color: rgb(248, 143, 58);
+
+          a {
+            margin: 10px auto;
             color: rgb(248, 143, 58);
-            
-            a {
-              margin: 10px auto;
-              color: rgb(248, 143, 58);
-              text-decoration: none;
-              line-height: 1.3em;
-            }
+            text-decoration: none;
+            line-height: 1.3em;
           }
         }
-      
+      }
+
     }
   }
 
@@ -466,48 +469,56 @@ body {
     position: fixed;
     right: 0;
     bottom: 0;
-     .wrap_toolbar {
-       margin-bottom: 300px;
-       .item_tool {
-         border: 1px solid black;
-         border-radius: 3px;
-         width: 44px;
-         height: 44px;
-         display: flex;
-         justify-content: center;
-         align-items: center;
-         margin: 12px;
-         background-color: white;
-         a {
-          color: rgb(240, 52, 52);
-         }
-       }
-     }
+
+    .wrap_toolbar {
+      margin-bottom: 300px;
+
+      .item_tool {
+        border: 1px solid black;
+        border-radius: 3px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 12px;
+        background-color: white;
+
+        a {
+          color: color(redf);
+        }
+      }
+    }
   }
 
   /*Footer*/
-   footer {
-    
+  footer {
+
     font: normal normal 400 18px/34px Roboto;
-     width: 100%;
-     .footer_top {
+    width: 100%;
+
+    .footer_top {
       font-style: italic;
       font-size: 16px;
       letter-spacing: 1px;
       font-weight: normal;
+
       .footer-social {
         p {
           display: flex;
           justify-content: center;
           text-align: center;
           margin: 20px 200px;
+          color: color(text1);
         }
+
         .social-icons {
-          
+
           display: flex;
           justify-content: center;
           align-items: center;
           height: 80px;
+
           li {
             border: 1px solid rgb(165, 165, 165);
             border-radius: 3px;
@@ -518,91 +529,103 @@ body {
             align-items: center;
             margin: 10px;
             background-color: white;
+
             a {
               list-style: none;
               color: black;
-              
+
               font-size: 20px;
-              
+
             }
           }
         }
       }
-     }
+    }
 
 
-     /*bottom*/
-    
-      .site-footer {
-        background-color: red;
-        padding-top: 30px;
-        padding-bottom: 20px;
-        margin-top: 30px;
-        .container {
-           .widget {
-             
-              h4 {
-                padding: 10px;
-                a {
-                  color: rgb(243, 154, 91);
-                }
+    /*bottom*/
+
+    .site-footer {
+      background-color: color(redf);
+      padding-top: 30px;
+      padding-bottom: 20px;
+      margin-top: 30px;
+
+      .container {
+        .widget {
+
+          h4 {
+            padding: 10px;
+
+            a {
+              color: rgb(243, 154, 91);
+            }
+          }
+
+          ul {
+            list-style: none;
+            font: normal normal 400 14px/30px Roboto;
+
+            li {
+
+              color: white;
+
+              a {
+                color: white;
               }
-              ul {
-                list-style: none;
-                font: normal normal 400 14px/30px Roboto;
-                
-                li {
-                      
-                  color: white;
-                  a {
-                    color: white;
-                  }
-                }
-              }
-           }
-          
-
+            }
+          }
         }
-      }
 
-      /*end and call*/
-      .footer-bottom {
-        background-color: red;
-            color: white;
-            margin: auto;
-            .container {
-              min-height: 70px;
-            
+
+      }
+    }
+
+    /*end and call*/
+    .footer-bottom {
+      background-color: color(redf);
+      color: white;
+      margin: auto;
+
+      .container {
+        min-height: 70px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .inner {
+          font-size: 16px;
+          font-weight: 400;
+          
+        }
+        a {
+          color: white;
+          font-style: italic;
+        }
+
+        .phone {
+          position: fixed;
+          right: 0;
+          bottom: 0;
+
+          i {
+            border: 1px solid black;
+            border-radius: 50%;
+            width: 44px;
+            height: 44px;
             display: flex;
             justify-content: center;
             align-items: center;
-            a {
-              color: white;
-            }
-            .phone {
-              position: fixed;
-              right: 0;
-              bottom: 0;
-              
-                i {
-                  border: 1px solid black;
-                  border-radius: 50%;
-                  width: 44px;
-                  height: 44px;
-                  display: flex;
-                  justify-content: center;
-                  align-items: center;
-                  margin: auto 60px 60px auto;
-                  
-                  background-color: rgb(255, 83, 83);
-                  
-                }
-              
-            }
-            }
-      }
+            margin: auto 60px 60px auto;
+            background-color: color(redf);
 
-    
-  
-   }
+          }
+
+        }
+      }
+    }
+
+
+
+  }
 }

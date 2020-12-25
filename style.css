@@ -1,17 +1,10 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
-html,
 body {
+  width: 100%;
   margin: 0;
   padding: 0;
   font-size: 14px;
-  font-family: "Roboto", sans-serif;
-}
-
-body {
-  background-color: #ccc;
-  width: 100%;
-  font-family: "Roboto", sans-serif;
   /*List in nav*/
   /*set up picture*/
   /*Layout-I*/
@@ -22,10 +15,8 @@ body {
 }
 
 body #Nav-bar {
-  background-color: white;
   min-height: 540px;
-  color: white;
-  font-size: 16px;
+  color: #FFFFFF;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -41,7 +32,7 @@ body #Nav-bar .location {
   min-height: 28px;
   width: 100%;
   list-style: none;
-  background-color: #f7de03;
+  background-color: #f5bd46;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -58,7 +49,7 @@ body #Nav-bar .location {
 }
 
 body #Nav-bar .location .loca-items {
-  color: white;
+  color: #FFFFFF;
   margin: auto 10px;
 }
 
@@ -68,7 +59,7 @@ body #Nav-bar .location .loca-items i {
 
 body #Nav-bar .location .loca-items a {
   text-decoration: none;
-  color: white;
+  color: #FFFFFF;
   margin: auto 5px;
 }
 
@@ -88,7 +79,7 @@ body .Nav-list {
   text-align: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  background-color: #ee2d2d;
+  background-color: #e53e48;
   /*items in list*/
 }
 
@@ -149,7 +140,6 @@ body #Layout-I {
       -ms-flex-direction: column;
           flex-direction: column;
   position: relative;
-  background-color: white;
   /*dịch vụ cung cấp*/
   /*gioi thieu */
   /*Tư vấn*/
@@ -187,16 +177,22 @@ body #Layout-I #DVCC div {
 
 body #Layout-I #DVCC div p {
   margin: 10px;
-  color: #e72121;
+  color: #e53e48;
 }
 
 body #Layout-I #GT {
-  background-color: white;
-  margin: auto 300px;
+  margin: 20px 300px;
+}
+
+body #Layout-I #GT h2 {
+  font-size: 30px;
+  padding-bottom: 30px;
+  padding-top: 10px;
+  font-weight: 400;
 }
 
 body #Layout-I #GT .GT-p {
-  color: black;
+  color: #4b4b4b8a;
   font-weight: normal;
   font-size: 16px;
 }
@@ -229,8 +225,7 @@ body #Layout-I #TV div {
 }
 
 body #Layout-I #TV div a {
-  margin: 10px 5px;
-  color: black;
+  color: #4b4b4b8a;
   text-decoration: none;
   line-height: 1.3em;
 }
@@ -248,12 +243,6 @@ body #author-form {
 }
 
 body #author-form .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   color: white;
   margin: 30px auto;
   /*Reviews content*/
@@ -351,6 +340,7 @@ body #TTCH #left .title {
 
 body #TTCH #left .title h2 {
   font-size: 30px;
+  padding-bottom: 30px;
   padding-top: 10px;
   font-weight: 400;
 }
@@ -363,7 +353,8 @@ body #TTCH #left .title h2 a {
 body #TTCH #left .title .text_small {
   font-size: 16px;
   font-style: italic;
-  margin: 10px 40px 30px;
+  color: #4b4b4b8a;
+  margin: auto 40px 30px;
 }
 
 body #TTCH #left .container .row {
@@ -498,7 +489,7 @@ body #TTCH #right #Form-DL .container form .btn-box button {
           box-sizing: border-box;
   border: 1px;
   border-radius: 3px;
-  background-color: #f03434;
+  background-color: #e53e48;
   color: white;
 }
 
@@ -573,7 +564,7 @@ body .toolbar_slide .wrap_toolbar .item_tool {
 }
 
 body .toolbar_slide .wrap_toolbar .item_tool a {
-  color: #f03434;
+  color: #e53e48;
 }
 
 body footer {
@@ -599,6 +590,7 @@ body footer .footer_top .footer-social p {
           justify-content: center;
   text-align: center;
   margin: 20px 200px;
+  color: #4b4b4b8a;
 }
 
 body footer .footer_top .footer-social .social-icons {
@@ -639,7 +631,7 @@ body footer .footer_top .footer-social .social-icons li a {
 }
 
 body footer .site-footer {
-  background-color: red;
+  background-color: #e53e48;
   padding-top: 30px;
   padding-bottom: 20px;
   margin-top: 30px;
@@ -667,7 +659,7 @@ body footer .site-footer .container .widget ul li a {
 }
 
 body footer .footer-bottom {
-  background-color: red;
+  background-color: #e53e48;
   color: white;
   margin: auto;
 }
@@ -685,8 +677,14 @@ body footer .footer-bottom .container {
           align-items: center;
 }
 
+body footer .footer-bottom .container .inner {
+  font-size: 16px;
+  font-weight: 400;
+}
+
 body footer .footer-bottom .container a {
   color: white;
+  font-style: italic;
 }
 
 body footer .footer-bottom .container .phone {
@@ -710,6 +708,6 @@ body footer .footer-bottom .container .phone i {
       -ms-flex-align: center;
           align-items: center;
   margin: auto 60px 60px auto;
-  background-color: #ff5353;
+  background-color: #e53e48;
 }
 /*# sourceMappingURL=style.css.map */
